@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Erdbeere",
+    "vitamine": "Beta-Carotin, Vitame E, Vitamin B1, Vitamin B6, Folsäure, Vitamin C",
+    "category": "Fruit",
+    "description": "Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.",
+    "img": "assets/strawberry.jpeg"
+  },
+  {
+    "name": "Apfel",
+    "vitamine": "Vitamin A, Vitamin B1, Vitamin B2, Vitamin B6",
+    "category": "Fruit",
+    "description": "Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.",
+    "img": "assets/apple.jpeg"
+  },
+  {
+    "name": "Gurke",
+    "vitamine": "Vitamin A, Vitamin B1, Vitamin B2",
+    "category": "Vegetable",
+    "description": "Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato",
+    "img": "assets/cucumber.jpeg"
+  },
+  {
+    "name": "Erbse",
+    "vitamine": "Vitamin B1, Vitamin B2, Vitamin B6",
+    "category": "Vegetable",
+    "description": "chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean c",
+    "img": "../assets/pea.jpeg"
+  },
+  {
+    "name": "Rote Beete",
+    "vitamine": "Vitamin B9, Vitamin B7, Vitamin B9, Vitamin C",
+    "category": "Vegetable",
+    "description": "Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya",
+    "img": "../assets/beetroot.jpeg"
+  },
+  {
+    "name": "Kren",
+    "vitamine": "Vitamin B9, Vitamin C",
+    "category": "Vegetable",
+    "description": "lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone",
+    "img": "../assets/horseredish.jpeg"
+  },
+  {
+    "name": "Trauben",
+    "vitamine": "Vitamin B1, Vitamin B6, ",
+    "category": "Fruit",
+    "description": "Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish",
+    "img": "../assets/grapes.jpeg"
+  },
+  {
+    "name": "Orangen",
+    "vitamine": "Vitame E, Folsäure, Vitamin C",
+    "category": "Fruit",
+    "description": "Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jícama green bean celtuce collard greens avocado quandong",
+    "img": "../assets/orange.jpeg"
+  },
+  {
+    "name": "Kirschen",
+    "vitamine": "Vitame E, Vitamin B1, Vitamin B6, Folsäure, Vitamin C",
+    "category": "Vegetable",
+    "description": "Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts",
+    "img": "../assets/cherry.jpeg"
+}
+]

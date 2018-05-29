@@ -1,0 +1,57 @@
+<div class="container">
+  <h2>foods</h2>
+  <div *ngIf="appState == 'extend'">
+    <div class="row">
+      <div class="col-lg-6">
+        <button type="button" class="close text-right" aria-label="Close" class="btn btn-info" (click)="changeState('default')">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+     
+      <div class="col-lg-6 text-center">
+        <div *ngFor="let food of food">
+          <div *ngIf="food.$key == activeKey">
+              
+            {{food.description}}
+            <div class="list card" ng-repeat="food in food">
+                <div class="item item-image">
+                  <img src="{{food.img}}"> <!-- ???????? -->
+                </div>	
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="appState == 'default'" class="row">
+      <div class="col-lg-12">
+          <label >Filter Category
+              <select  (change)="filterCategory(filteredCategory.value)" #filteredCategory>
+                <option id="select" value="0">Select</option>
+                <option *ngFor="let category of category" value="{{category.name}}">{{category.name}}</option>
+              </select>
+          </label>
+      </div>
+  </div>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Category</th>
+        <th>Name</th>
+        <th>Vitame</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let food of food index as i">
+        <td>{{i}}</td>
+        <td>{{food.category}}</td>
+        <td>{{food.name}}</td>
+        <td>{{food.vitamine}}</td>
+        <button (click)="changeState('extend', food.$key)" class="btn btn-info">More</button>
+      </tr>
+    </tbody>
+  </table>
+</div>
