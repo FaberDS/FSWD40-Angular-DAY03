@@ -9,7 +9,9 @@ export class FirebaseService {
     constructor(private af: AngularFireDatabase) {
     }
     getFoods(category: string = null) {
-        if (category !== '0')  {
+        if (category === '0') {
+            this.food = this.af.list('/food') as FirebaseListObservable<Food[]>;
+        }else if (category !== null)  {
             this.food = this.af.list('/food', {
                 query: {
                     orderByChild: 'category',
@@ -19,6 +21,7 @@ export class FirebaseService {
 
         }else {
             this.food = this.af.list('/food') as FirebaseListObservable<Food[]>;
+
         }
         return this.food;
 
@@ -27,6 +30,10 @@ export class FirebaseService {
   getCategories() {
     this.category = this.af.list('/categories') as FirebaseListObservable<Category[]>;
     return this.category ;
+}
+
+addFood(newFood) {
+    return this.food.push(newFood);
 }
 }
 

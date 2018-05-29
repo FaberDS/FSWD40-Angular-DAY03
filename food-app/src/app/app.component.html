@@ -24,6 +24,42 @@
     </div>
   </div>
 
+
+<div *ngIf="appState == 'default'" class="row">
+  <div class="col-lg-12">
+    <button class="btn btn-danger"  (click)="changeState('add')">Add new Food</button>
+  </div>
+</div>
+<div *ngIf="appState == 'add'">
+  <div class="panel panel-primary">
+      <div class="panel-heading">Add new Food</div>
+      <div class="panel-body">
+          <form (submit)="addFood(name.value,category.value,vitamine.value)">
+              <div class="row">
+                  <div class="col-lg-6">
+                      <div class="form-group">
+                          <label for="name">Name:</label>
+                          <input type="text" class="form-control" #name>
+                      </div>
+                      <label for="sel1">Select list (select one):</label>
+                      <select class="form-control" #category>
+                          <option class="form-control" value="0">All</option>
+                          <option class="form-control" *ngFor="let category of category" value="{{category.name}}">
+                              {{category.name}}
+                          </option>
+                      </select>
+                      <div class="form-group">
+                          <label for="vitamine">Vitamine:</label>
+                          <input type="text" class="form-control" #vitamine>
+                      </div>
+                      <button type="submit" class="btn btn-success">Submit</button>
+                  </div>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
+
   <div *ngIf="appState == 'default'" class="row">
       <div class="col-lg-12">
           <label >Filter Category

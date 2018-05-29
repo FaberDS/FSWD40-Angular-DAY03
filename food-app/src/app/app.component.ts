@@ -55,6 +55,16 @@ filterCategory(category) {
     this.appState = state;
 
   }
+
+addFood(name: string, category: string, vitamine: string) {
+  var newFood = {
+    name: name,
+    category: category,
+    vitamine: vitamine
+  };
+  this._firebaseService.addFood(newFood);
+  this.changeState('default');
+}
 }
 
 export interface Food {
